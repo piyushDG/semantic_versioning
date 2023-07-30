@@ -66,9 +66,9 @@ pipeline {
             }
         }
 
-        stage('BugFix') {
+        stage('hostfix') {
             when {
-                branch "bugfix/*"
+                branch "hotfix/*"
             }
             steps {
                 echo "${env.BRANCH_NAME}"
