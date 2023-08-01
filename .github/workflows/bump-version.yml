@@ -48,8 +48,8 @@ jobs:
 
     - name: Setup Git
       run: |
-        git config user.name 'Myles Borins'
-        git config user.email 'myles.borins@gmail.com'
+        git config user.name 'piyush'
+        git config user.email 'piyush@digitalgreen.org'
 
     - name: bump version
       run: npm version ${{ github.event.inputs.version }}
